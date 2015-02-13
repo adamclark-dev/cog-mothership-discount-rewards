@@ -16,8 +16,8 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"Message\\Mothership\\Discount\\Reward\\"      : "src",
-			"Message\\Mothership\\Discount\\Reward\\Test\\": "tests"
+			"Message\\Mothership\\DiscountReward\\"      : "src",
+			"Message\\Mothership\\DiscountReward\\Test\\": "tests"
 		}
 	},
 	"repositories": [
@@ -29,6 +29,7 @@
 	"require": {
 		"php": ">=5.4.0",
 
-		"message/cog-mothership-refer-a-friend" : "dev-develop as 1.0.0"
+		"message/cog-mothership-refer-a-friend" : "dev-develop as 1.0.0",
+		"message/cog-mothership-discount"       : "~1.5"
 	}
 }
