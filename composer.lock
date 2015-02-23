@@ -938,16 +938,18 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:messagedigital/cog-mothership-refer-a-friend.git",
-                "reference": "b72806826a76099ffbc4dd914c885d0dfe8a3021"
+                "reference": "04cf5bc06cccd28107c6aa8e53ed10aebcde40af"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/messagedigital/cog-mothership-refer-a-friend/zipball/b72806826a76099ffbc4dd914c885d0dfe8a3021",
-                "reference": "b72806826a76099ffbc4dd914c885d0dfe8a3021",
+                "url": "https://api.github.com/repos/messagedigital/cog-mothership-refer-a-friend/zipball/04cf5bc06cccd28107c6aa8e53ed10aebcde40af",
+                "reference": "04cf5bc06cccd28107c6aa8e53ed10aebcde40af",
                 "shasum": ""
             },
             "require": {
                 "message/cog": "~3.12",
+                "message/cog-mothership-cp": "~2.1",
+                "message/cog-user": "~1.4",
                 "php": ">=5.4.0"
             },
             "type": "library",
@@ -958,7 +960,7 @@
                 }
             },
             "license": [
-                "proprietary"
+                "GPL"
             ],
             "authors": [
                 {
@@ -979,7 +981,7 @@
                 "issues": "http://github.com/messagedigital/cog-mothership-refer-a-friend/issues",
                 "source": "https://github.com/messagedigital/cog-mothership-refer-a-friend/tree/develop"
             },
-            "time": "2015-02-13 14:54:13"
+            "time": "2015-02-23 16:13:08"
         },
         {
             "name": "message/cog-mothership-user",
