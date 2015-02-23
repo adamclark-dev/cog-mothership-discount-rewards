@@ -1,0 +1,6 @@
+ms.discount_rewards:
+  referral:
+    types:
+      discount_reward:
+        name: A discount reward
+        description: A reward where a discount is generated when a user is successfully invited to the site
