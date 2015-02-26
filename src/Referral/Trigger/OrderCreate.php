@@ -10,7 +10,7 @@ class OrderCreate implements TriggerInterface
 {
 	public function getName()
 	{
-		return 'order_create';
+		return 'discount_reward.order_create';
 	}
 
 	public function getDisplayName()

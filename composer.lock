@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b85944a464baeaffef04f60c0ba8a8ba",
+    "hash": "9a579d7c2d5627f0b8bba8dc44c38090",
     "packages": [
         {
             "name": "dflydev/markdown",
@@ -651,121 +651,6 @@
             "time": "2015-02-10 15:26:18"
         },
         {
-            "name": "message/cog-imageresize",
-            "version": "1.1.0",
-            "source": {
-                "type": "git",
-                "url": "git@github.com:messagedigital/cog-imageresize.git",
-                "reference": "1.1.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/messagedigital/cog-imageresize/zipball/1.1.0",
-                "reference": "1.1.0",
-                "shasum": ""
-            },
-            "require": {
-                "imagine/imagine": "~0.4",
-                "message/cog": "~3.0",
-                "php": ">=5.4.0"
-            },
-            "suggest": {
-                "ext-imagemagick": "Provides faster and more powerful image manipulation libraries"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Message\\ImageResize\\": "src",
-                    "Message\\ImageResize\\Test\\": "tests"
-                }
-            },
-            "license": [
-                "proprietary"
-            ],
-            "authors": [
-                {
-                    "name": "The Message Development Team",
-                    "email": "dev@message.co.uk"
-                }
-            ],
-            "description": "Dynamic URI-based image resize functionality for Cog",
-            "homepage": "http://message.co.uk",
-            "keywords": [
-                "image",
-                "resize",
-                "thumbnail"
-            ],
-            "support": {
-                "wiki": "http://server.local/wiki/projects/cog",
-                "issues": "http://github.com/messagedigital/cog-imageresize/issues",
-                "source": "https://github.com/messagedigital/cog-imageresize/tree/1.1.0"
-            },
-            "time": "2014-03-18 14:41:27"
-        },
-        {
-            "name": "message/cog-mothership-commerce",
-            "version": "4.9.0",
-            "source": {
-                "type": "git",
-                "url": "git@github.com:messagedigital/cog-mothership-commerce.git",
-                "reference": "4.9.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/messagedigital/cog-mothership-commerce/zipball/4.9.0",
-                "reference": "4.9.0",
-                "shasum": ""
-            },
-            "require": {
-                "domisys/image_barcode2": "3.0.0",
-                "message/cog": "~3.12",
-                "message/cog-imageresize": "~1.0",
-                "message/cog-mothership-cp": "~2.2",
-                "message/cog-mothership-file-manager": "~2.0",
-                "message/cog-mothership-user": "~3.4",
-                "php": ">=5.4.0"
-            },
-            "require-dev": {
-                "mockery/mockery": "dev-master@dev"
-            },
-            "suggest": {
-                "message/cog-mothership-reports": "Module for displaying reports"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Message\\Mothership\\Commerce\\": "src",
-                    "Message\\Mothership\\Commerce\\Test\\": "tests"
-                }
-            },
-            "license": [
-                "proprietary"
-            ],
-            "authors": [
-                {
-                    "name": "The Message Development Team",
-                    "email": "dev@message.co.uk"
-                }
-            ],
-            "description": "Cog module for commerce building blocks in Mothership",
-            "homepage": "http://message.co.uk",
-            "keywords": [
-                "cog",
-                "commerce",
-                "money",
-                "mothership",
-                "order",
-                "orders",
-                "products"
-            ],
-            "support": {
-                "wiki": "http://server.local/wiki/projects/cog",
-                "issues": "http://github.com/messagedigital/cog-mothership-commerce/issues",
-                "source": "https://github.com/messagedigital/cog-mothership-commerce/tree/4.9.0"
-            },
-            "time": "2015-02-13 09:45:07"
-        },
-        {
             "name": "message/cog-mothership-cp",
             "version": "2.2.1",
             "source": {
@@ -820,130 +705,17 @@
             "time": "2015-01-28 17:57:51"
         },
         {
-            "name": "message/cog-mothership-discount",
-            "version": "1.5.2",
-            "source": {
-                "type": "git",
-                "url": "git@github.com:messagedigital/cog-mothership-discount.git",
-                "reference": "1.5.2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/messagedigital/cog-mothership-discount/zipball/1.5.2",
-                "reference": "1.5.2",
-                "shasum": ""
-            },
-            "require": {
-                "message/cog": "~3.0",
-                "message/cog-mothership-commerce": "~2.0 | ~3.0 | ~4.0",
-                "message/cog-mothership-cp": "~2.0",
-                "message/cog-user": "~1.0",
-                "php": ">=5.4.0"
-            },
-            "suggest": {
-                "message/cog-mothership-reports": "Module for displaying reports"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Message\\Mothership\\Discount\\": "src",
-                    "Message\\Mothership\\Discount\\Test\\": "tests"
-                }
-            },
-            "license": [
-                "proprietary"
-            ],
-            "authors": [
-                {
-                    "name": "The Message Development Team",
-                    "email": "dev@message.co.uk"
-                }
-            ],
-            "description": "Cog module for discount building blocks in Mothership",
-            "homepage": "http://message.co.uk",
-            "keywords": [
-                "campaign",
-                "cog",
-                "discount",
-                "mothership",
-                "offer"
-            ],
-            "support": {
-                "wiki": "http://server.local/wiki/projects/cog",
-                "issues": "http://github.com/messagedigital/cog-mothership-discount/issues",
-                "source": "https://github.com/messagedigital/cog-mothership-discount/tree/1.5.2"
-            },
-            "time": "2015-01-08 16:22:14"
-        },
-        {
-            "name": "message/cog-mothership-file-manager",
-            "version": "2.0.2",
-            "source": {
-                "type": "git",
-                "url": "git@github.com:messagedigital/cog-mothership-file-manager.git",
-                "reference": "2.0.2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/messagedigital/cog-mothership-file-manager/zipball/2.0.2",
-                "reference": "2.0.2",
-                "shasum": ""
-            },
-            "require": {
-                "message/cog": "~3.4",
-                "message/cog-imageresize": "~1.0",
-                "message/cog-mothership-cp": "~1.1 | ~2.0",
-                "php": ">=5.4.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Message\\Mothership\\FileManager\\": "src",
-                    "Message\\Mothership\\FileManager\\Test\\": "tests"
-                }
-            },
-            "license": [
-                "proprietary"
-            ],
-            "authors": [
-                {
-                    "name": "The Message Development Team",
-                    "email": "dev@message.co.uk"
-                }
-            ],
-            "description": "Cog module for file/asset management in Mothership",
-            "homepage": "http://message.co.uk",
-            "keywords": [
-                "asset",
-                "assets",
-                "cog",
-                "file",
-                "files",
-                "image",
-                "images",
-                "mothership",
-                "upload",
-                "uploads"
-            ],
-            "support": {
-                "wiki": "http://server.local/wiki/projects/cog",
-                "issues": "http://github.com/messagedigital/cog-mothership-file-manager/issues",
-                "source": "https://github.com/messagedigital/cog-mothership-file-manager/tree/2.0.2"
-            },
-            "time": "2015-01-08 15:08:18"
-        },
-        {
             "name": "message/cog-mothership-refer-a-friend",
             "version": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "git@github.com:messagedigital/cog-mothership-refer-a-friend.git",
-                "reference": "04cf5bc06cccd28107c6aa8e53ed10aebcde40af"
+                "reference": "0ec9adbd51e8891d722c04620d9b80c21e5cc575"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/messagedigital/cog-mothership-refer-a-friend/zipball/04cf5bc06cccd28107c6aa8e53ed10aebcde40af",
-                "reference": "04cf5bc06cccd28107c6aa8e53ed10aebcde40af",
+                "url": "https://api.github.com/repos/messagedigital/cog-mothership-refer-a-friend/zipball/0ec9adbd51e8891d722c04620d9b80c21e5cc575",
+                "reference": "0ec9adbd51e8891d722c04620d9b80c21e5cc575",
                 "shasum": ""
             },
             "require": {
@@ -981,60 +753,7 @@
                 "issues": "http://github.com/messagedigital/cog-mothership-refer-a-friend/issues",
                 "source": "https://github.com/messagedigital/cog-mothership-refer-a-friend/tree/develop"
             },
-            "time": "2015-02-23 16:13:08"
-        },
-        {
-            "name": "message/cog-mothership-user",
-            "version": "3.4.2",
-            "source": {
-                "type": "git",
-                "url": "git@github.com:messagedigital/cog-mothership-user.git",
-                "reference": "3.4.2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/messagedigital/cog-mothership-user/zipball/3.4.2",
-                "reference": "3.4.2",
-                "shasum": ""
-            },
-            "require": {
-                "kevinlebrun/colors.php": "0.*",
-                "message/cog": "~3.0",
-                "message/cog-mothership-cp": "~1.2 | ~2.0",
-                "message/cog-user": "~1.4",
-                "php": ">=5.4.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Message\\Mothership\\User\\": "src",
-                    "Message\\Mothership\\User\\Test\\": "tests"
-                }
-            },
-            "license": [
-                "proprietary"
-            ],
-            "authors": [
-                {
-                    "name": "The Message Development Team",
-                    "email": "dev@message.co.uk"
-                }
-            ],
-            "description": "Cog module for Mothership-specific user functionality",
-            "homepage": "http://message.co.uk",
-            "keywords": [
-                "accounts",
-                "cog",
-                "customers",
-                "mothership",
-                "user"
-            ],
-            "support": {
-                "wiki": "http://server.local/wiki/projects/cog",
-                "issues": "http://github.com/messagedigital/cog-mothership-user/issues",
-                "source": "https://github.com/messagedigital/cog-mothership-user/tree/3.4.2"
-            },
-            "time": "2015-02-10 15:39:22"
+            "time": "2015-02-23 17:45:54"
         },
         {
             "name": "message/cog-user",
@@ -1203,6 +922,471 @@
                 "psr-3"
             ],
             "time": "2013-11-14 19:48:31"
+        },
+        {
+            "name": "mothership-ec/cog",
+            "version": "4.0.0",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:messagedigital/cog.git",
+                "reference": "4.0.0"
+            },
+            "require": {
+                "dflydev/markdown": "~1.0",
+                "ext-curl": "*",
+                "ext-gd": "*",
+                "ext-intl": "*",
+                "ext-json": "*",
+                "ext-mysqli": "*",
+                "ext-simplexml": "*",
+                "filp/whoops": "1.0.*",
+                "itbz/fpdf": "1.7.*",
+                "itbz/fpdi": "1.4.*",
+                "jeremeamia/superclosure": "~1.0",
+                "knplabs/knp-snappy": "0.1.*",
+                "kriswallsmith/assetic": "1.1.*",
+                "lmammino/jsmin4assetic": "1.0.*",
+                "message/wkhtmltopdf": "1.0.*",
+                "monolog/monolog": "1.7.*",
+                "mtdowling/cron-expression": "1.0.*",
+                "natxet/cssmin": "3.0.*",
+                "php": ">=5.4.0",
+                "pimple/pimple": "~2.0",
+                "swiftmailer/swiftmailer": "~5.2.1 | ~5.3",
+                "symfony/console": "2.3.*",
+                "symfony/event-dispatcher": "2.1.*",
+                "symfony/filesystem": "2.3.*",
+                "symfony/finder": "2.2.*",
+                "symfony/form": "2.3.*",
+                "symfony/http-kernel": "2.3.*",
+                "symfony/process": "2.1.*",
+                "symfony/routing": "2.3.*",
+                "symfony/templating": "2.1.*",
+                "symfony/translation": "2.3.*",
+                "symfony/twig-bridge": "2.3.*",
+                "symfony/twig-bundle": "2.3.*",
+                "symfony/validator": "2.3.*",
+                "symfony/yaml": "2.1.*",
+                "treasure-chest/treasure-chest": "0.1.*",
+                "twig/twig": "1.13.*",
+                "zendframework/zend-debug": "~2.2.6"
+            },
+            "require-dev": {
+                "mikey179/vfsstream": "1.1.*",
+                "mockery/mockery": "~0.9"
+            },
+            "suggest": {
+                "ext-apc": "The preferred caching system in Cog",
+                "ext-mysqlnd": "Extension for converting data types that come out of a MySQL database. There may be strange behaviour if this is not installed",
+                "ext-oauth": "Extension for managing OAuth requests",
+                "message/cog-raven": "A Cog module that logs errors, exceptions and messages to Sentry"
+            },
+            "bin": [
+                "bin/cog",
+                "bin/cog-console"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Message\\Cog\\": "src",
+                    "Message\\Cog\\Test\\": "tests"
+                }
+            },
+            "authors": [
+                {
+                    "name": "The Mothership Development Team",
+                    "email": "hello@mothership.ec"
+                }
+            ],
+            "description": "Mothership's PHP5 framework for building modular systems",
+            "homepage": "http://mothership.ec",
+            "keywords": [
+                "cog",
+                "framework"
+            ],
+            "support": {
+                "wiki": "http://wiki.mothership.ec/Cog",
+                "issues": "http://github.com/mothership-ec/cog/issues"
+            },
+            "time": "2015-02-25 14:14:39"
+        },
+        {
+            "name": "mothership-ec/cog-imageresize",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:messagedigital/cog-imageresize.git",
+                "reference": "2.0.0"
+            },
+            "require": {
+                "imagine/imagine": "~0.4",
+                "mothership-ec/cog": "~4.0",
+                "php": ">=5.4.0"
+            },
+            "suggest": {
+                "ext-imagemagick": "Provides faster and more powerful image manipulation libraries"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Message\\ImageResize\\": "src",
+                    "Message\\ImageResize\\Test\\": "tests"
+                }
+            },
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "The Mothership Development Team",
+                    "email": "dev@mothership.ec"
+                }
+            ],
+            "description": "Dynamic URI-based image resize functionality for Cog",
+            "homepage": "http://mothership.ec",
+            "keywords": [
+                "image",
+                "resize",
+                "thumbnail"
+            ],
+            "support": {
+                "wiki": "http://wiki.mothership.ec/Cog_Image_Resize",
+                "issues": "http://github.com/mothership-ec/cog-imageresize/issues"
+            },
+            "time": "2015-02-24 15:42:16"
+        },
+        {
+            "name": "mothership-ec/cog-mothership-commerce",
+            "version": "5.0.0",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:messagedigital/cog-mothership-commerce.git",
+                "reference": "5.0.0"
+            },
+            "require": {
+                "domisys/image_barcode2": "3.0.0",
+                "mothership-ec/cog": "~4.0",
+                "mothership-ec/cog-imageresize": "~2.0",
+                "mothership-ec/cog-mothership-cp": "~3.0",
+                "mothership-ec/cog-mothership-file-manager": "~3.0",
+                "mothership-ec/cog-mothership-reports": "~2.0",
+                "mothership-ec/cog-mothership-user": "~4.0",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "dev-master@dev"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Message\\Mothership\\Commerce\\": "src",
+                    "Message\\Mothership\\Commerce\\Test\\": "tests"
+                }
+            },
+            "license": [
+                "GPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "The Mothership Development Team",
+                    "email": "dev@mothership.ec"
+                }
+            ],
+            "description": "Cog module for commerce building blocks in Mothership",
+            "homepage": "http://mothership.ec",
+            "keywords": [
+                "cog",
+                "commerce",
+                "money",
+                "mothership",
+                "order",
+                "orders",
+                "products"
+            ],
+            "support": {
+                "wiki": "http://wiki.mothership.ec/Commerce_module",
+                "issues": "http://github.com/mothership-ec/cog-mothership-commerce/issues"
+            },
+            "time": "2015-02-24 17:06:39"
+        },
+        {
+            "name": "mothership-ec/cog-mothership-cp",
+            "version": "3.0.0",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:messagedigital/cog-mothership-cp.git",
+                "reference": "3.0.0"
+            },
+            "require": {
+                "mothership-ec/cog": "~4.0",
+                "mothership-ec/cog-user": "~2.0",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Message\\Mothership\\ControlPanel\\": "src",
+                    "Message\\Mothership\\ControlPanel\\Test\\": "tests"
+                }
+            },
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "The Mothership Development Team",
+                    "email": "dev@mothership.ec"
+                }
+            ],
+            "description": "Cog module for the Mothership Control Panel",
+            "homepage": "http://mothership.ec",
+            "keywords": [
+                "admin",
+                "cog",
+                "control panel",
+                "cp",
+                "mothership"
+            ],
+            "support": {
+                "wiki": "http://wiki.mothership.ec/Control_Panel_module",
+                "issues": "http://github.com/mothership-ec/cog-mothership-cp/issues"
+            },
+            "time": "2015-02-24 14:51:58"
+        },
+        {
+            "name": "mothership-ec/cog-mothership-discount",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:messagedigital/cog-mothership-discount.git",
+                "reference": "2.0.0"
+            },
+            "require": {
+                "mothership-ec/cog": "~4.0",
+                "mothership-ec/cog-mothership-commerce": "~5.0",
+                "mothership-ec/cog-mothership-cp": "~3.0",
+                "mothership-ec/cog-mothership-reports": "~2.0",
+                "mothership-ec/cog-user": "~2.0",
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Message\\Mothership\\Discount\\": "src",
+                    "Message\\Mothership\\Discount\\Test\\": "tests"
+                }
+            },
+            "license": [
+                "GPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "The Mothership Development Team",
+                    "email": "dev@mothership.ec"
+                }
+            ],
+            "description": "Cog module for discount building blocks in Mothership",
+            "homepage": "http://mothership.ec",
+            "keywords": [
+                "campaign",
+                "cog",
+                "discount",
+                "mothership",
+                "offer"
+            ],
+            "support": {
+                "wiki": "http://wiki.mothership.ec/Discount_module",
+                "issues": "http://github.com/mothership-ec/cog-mothership-discount/issues"
+            },
+            "time": "2015-02-25 11:24:40"
+        },
+        {
+            "name": "mothership-ec/cog-mothership-file-manager",
+            "version": "3.0.0",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:messagedigital/cog-mothership-file-manager.git",
+                "reference": "3.0.0"
+            },
+            "require": {
+                "mothership-ec/cog": "~4.0",
+                "mothership-ec/cog-imageresize": "~2.0",
+                "mothership-ec/cog-mothership-cp": "~3.0",
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Message\\Mothership\\FileManager\\": "src",
+                    "Message\\Mothership\\FileManager\\Test\\": "tests"
+                }
+            },
+            "license": [
+                "GPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "The Message Development Team",
+                    "email": "dev@mothership.ec"
+                }
+            ],
+            "description": "Cog module for file/asset management in Mothership",
+            "homepage": "http://mothership.ec",
+            "keywords": [
+                "asset",
+                "assets",
+                "cog",
+                "file",
+                "files",
+                "image",
+                "images",
+                "mothership",
+                "upload",
+                "uploads"
+            ],
+            "support": {
+                "wiki": "http://wiki.mothership.ec/File_Manager_module",
+                "issues": "http://github.com/mothership-ec/cog-mothership-file-manager/issues"
+            },
+            "time": "2015-02-24 15:55:58"
+        },
+        {
+            "name": "mothership-ec/cog-mothership-reports",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:messagedigital/cog-mothership-reports.git",
+                "reference": "2.0.0"
+            },
+            "require": {
+                "mothership-ec/cog": "~4.0",
+                "mothership-ec/cog-mothership-cp": "~3.0",
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Message\\Mothership\\Report\\": "src",
+                    "Message\\Mothership\\Report\\Test\\": "tests"
+                }
+            },
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "The Mothership Development Team",
+                    "email": "dev@mothership.ec"
+                }
+            ],
+            "description": "Mothership cogule for reports",
+            "homepage": "http://mothership.ec",
+            "keywords": [
+                "data",
+                "information",
+                "mothership",
+                "reporting",
+                "reports",
+                "stats"
+            ],
+            "support": {
+                "wiki": "http://wiki.mothership.ec/Reports_module",
+                "issues": "http://github.com/mothership-ec/cog-mothership-reports/issues"
+            },
+            "time": "2015-02-24 15:06:23"
+        },
+        {
+            "name": "mothership-ec/cog-mothership-user",
+            "version": "4.0.0",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:messagedigital/cog-mothership-user.git",
+                "reference": "4.0.0"
+            },
+            "require": {
+                "kevinlebrun/colors.php": "0.*",
+                "mothership-ec/cog": "~4.0",
+                "mothership-ec/cog-mothership-cp": "~3.0",
+                "mothership-ec/cog-mothership-reports": "~2.0",
+                "mothership-ec/cog-user": "~2.0",
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Message\\Mothership\\User\\": "src",
+                    "Message\\Mothership\\User\\Test\\": "tests"
+                }
+            },
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "The Mothership Development Team",
+                    "email": "dev@mothership.ec"
+                }
+            ],
+            "description": "Cog module for Mothership-specific user functionality",
+            "homepage": "http://mothership.ec",
+            "keywords": [
+                "accounts",
+                "cog",
+                "customers",
+                "mothership",
+                "user"
+            ],
+            "support": {
+                "wiki": "http://wiki.mothership.ec/User_module",
+                "issues": "http://github.com/mothership-ec/cog-mothership-user/issues"
+            },
+            "time": "2015-02-24 15:30:20"
+        },
+        {
+            "name": "mothership-ec/cog-user",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:messagedigital/cog-user.git",
+                "reference": "2.0.0"
+            },
+            "require": {
+                "mothership-ec/cog": "~4.0",
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Message\\User\\": "src",
+                    "Message\\User\\Test\\": "tests"
+                }
+            },
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "The Mothership Development Team",
+                    "email": "dev@mothership.ec"
+                }
+            ],
+            "description": "Cog module for a very basic and extensible user system",
+            "homepage": "http://mothership.ec",
+            "keywords": [
+                "account",
+                "accounts",
+                "cog",
+                "user",
+                "users"
+            ],
+            "support": {
+                "wiki": "http://wiki.mothership.ec/Cog_User",
+                "issues": "http://github.com/mothership-ec/cog-user/issues"
+            },
+            "time": "2015-02-24 14:40:17"
         },
         {
             "name": "mtdowling/cron-expression",

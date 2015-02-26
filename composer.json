@@ -30,7 +30,7 @@
 		"php": ">=5.4.0",
 
 		"message/cog-mothership-refer-a-friend" : "dev-develop as 1.0.0",
-        "message/cog-mothership-commerce"       : "~4.9",
-		"message/cog-mothership-discount"       : "~1.5"
+        "mothership-ec/cog-mothership-commerce" : "~5.0",
+		"mothership-ec/cog-mothership-discount" : "~2.0"
 	}
 }
