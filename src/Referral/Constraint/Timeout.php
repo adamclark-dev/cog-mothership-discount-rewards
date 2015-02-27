@@ -7,26 +7,42 @@ use Message\Mothership\ReferAFriend\Referral\Constraint\ConstraintInterface;
 
 class Timeout implements ConstraintInterface
 {
+	private $_value;
+
 	public function getName()
 	{
-		return 'discount_reward.timeout';
+		return 'discount_reward_timeout';
 	}
 
 	public function getDisplayName()
 	{
-		return 'ms.discount_rewards.referral.constraints.timeout.name';
+		return 'ms.discount_reward.referral.constraints.timeout.name';
 	}
 
 	public function getDescription()
 	{
-		return 'ms.discount_rewards.referral.constraints.timeout.description';
+		return 'ms.discount_reward.referral.constraints.timeout.description';
 	}
 
-	public function getTypes()
+	public function setValue($value)
 	{
-		return [
-			'discount_reward',
-		];
+		$this->_value;
+	}
+
+	public function getValue()
+	{
+		return $this->_value;
+	}
+
+
+	public function getFormType()
+	{
+		return 'text';
+	}
+
+	public function getFormOptions()
+	{
+		return [];
 	}
 
 	public function validate(ReferralInterface $referral)

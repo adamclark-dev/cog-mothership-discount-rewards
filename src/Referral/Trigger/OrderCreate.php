@@ -10,17 +10,17 @@ class OrderCreate implements TriggerInterface
 {
 	public function getName()
 	{
-		return 'discount_reward.order_create';
+		return 'discount_reward_order_create';
 	}
 
 	public function getDisplayName()
 	{
-		return 'ms.discount_rewards.referral.triggers.order_create.name';
+		return 'ms.discount_reward.referral.triggers.order_create.name';
 	}
 
 	public function getDescription()
 	{
-		return 'ms.discount_rewards.referral.triggers.order_create.description';
+		return 'ms.discount_reward.referral.triggers.order_create.description';
 	}
 
 	public function getTypes()
