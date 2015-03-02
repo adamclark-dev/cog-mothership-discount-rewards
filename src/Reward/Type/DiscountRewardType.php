@@ -1,8 +1,8 @@
 <?php
 
-namespace Message\Mothership\DiscountReward\Referral\Type;
+namespace Message\Mothership\DiscountReward\Reward\Type;
 
-use Message\Mothership\ReferAFriend\Referral\Type\TypeInterface;
+use Message\Mothership\ReferAFriend\Reward\Type\TypeInterface;
 
 class DiscountRewardType implements TypeInterface
 {

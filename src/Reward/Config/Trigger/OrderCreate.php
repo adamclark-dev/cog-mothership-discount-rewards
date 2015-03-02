@@ -1,8 +1,8 @@
 <?php
 
-namespace Message\Mothership\DiscountReward\Referral\Trigger;
+namespace Message\Mothership\DiscountReward\Reward\Config\Trigger;
 
-use Message\Mothership\ReferAFriend\Referral\Trigger\TriggerInterface;
+use Message\Mothership\ReferAFriend\Reward\Config\Trigger\TriggerInterface;
 
 use Message\Mothership\Commerce\Order\Events as OrderEvents;
 

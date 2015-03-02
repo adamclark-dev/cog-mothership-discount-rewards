@@ -1,27 +1,27 @@
 <?php
 
-namespace Message\Mothership\DiscountReward\Referral\Constraint;
+namespace Message\Mothership\DiscountReward\Reward\Config\Constraint;
 
 use Message\Mothership\ReferAFriend\Referral\ReferralInterface;
-use Message\Mothership\ReferAFriend\Referral\Constraint\ConstraintInterface;
+use Message\Mothership\ReferAFriend\Reward\Config\Constraint\ConstraintInterface;
 
-class Timeout implements ConstraintInterface
+class MinimumOrder implements ConstraintInterface
 {
 	private $_value;
 
 	public function getName()
 	{
-		return 'discount_reward_timeout';
+		return 'discount_reward_minimum_order';
 	}
 
 	public function getDisplayName()
 	{
-		return 'ms.discount_reward.referral.constraints.timeout.name';
+		return 'ms.discount_reward.referral.constraints.minimum_order.name';
 	}
 
 	public function getDescription()
 	{
-		return 'ms.discount_reward.referral.constraints.timeout.description';
+		return 'ms.discount_reward.referral.constraints.minimum_order.description';
 	}
 
 	public function setValue($value)
@@ -33,7 +33,6 @@ class Timeout implements ConstraintInterface
 	{
 		return $this->_value;
 	}
-
 
 	public function getFormType()
 	{
