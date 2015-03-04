@@ -9,6 +9,14 @@ use Message\Cog\Event\Event;
 
 use Symfony\Component\Validator\Constraints;
 
+/**
+ * Class Timeout
+ * @package Message\Mothership\DiscountReward\Reward\Config\Constraint
+ *
+ * @author Thomas Marchant <thomas@message.co.uk>
+ *
+ * Validate the the time of the order creation
+ */
 class Timeout implements ConstraintInterface
 {
 	private $_value;

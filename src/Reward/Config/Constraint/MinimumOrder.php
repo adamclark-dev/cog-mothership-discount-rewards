@@ -9,6 +9,14 @@ use Message\Mothership\Commerce\Order\Event\Event as OrderEvent;
 use Message\Cog\Event\Event;
 use Message\Cog\Localisation\Translator;
 
+/**
+ * Class MinimumOrder
+ * @package Message\Mothership\DiscountReward\Reward\Config\Constraint
+ *
+ * @author Thomas Marchant <thomas@message.co.uk>
+ *
+ * A more dynamic constraint that validates the amount spend on an order
+ */
 class MinimumOrder implements ConstraintInterface
 {
 	private $_value;
