@@ -5,6 +5,8 @@ namespace Message\Mothership\DiscountReward\Reward\Config\Constraint;
 use Message\Mothership\ReferAFriend\Referral\ReferralInterface;
 use Message\Mothership\ReferAFriend\Reward\Config\Constraint\ConstraintInterface;
 
+use Message\Cog\Event\Event;
+
 class MinimumOrder implements ConstraintInterface
 {
 	private $_value;
@@ -26,7 +28,7 @@ class MinimumOrder implements ConstraintInterface
 
 	public function setValue($value)
 	{
-		$this->_value;
+		$this->_value = round((float) $value, 2);
 	}
 
 	public function getValue()
@@ -44,7 +46,7 @@ class MinimumOrder implements ConstraintInterface
 		return [];
 	}
 
-	public function validate(ReferralInterface $referral)
+	public function isValid(ReferralInterface $referral, Event $event)
 	{
 
 	}

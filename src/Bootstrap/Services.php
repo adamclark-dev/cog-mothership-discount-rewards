@@ -23,17 +23,12 @@ class Services implements ServicesInterface
 		// Referral constraints
 		$services['refer.reward.config.constraints'] = $services->extend('refer.reward.config.constraints', function($constraints, $c) {
 			$constraints->add($c['refer.discount.reward.config.constraints.minimum_order']);
-			$constraints->add($c['refer.discount.reward.config.constraints.timeout']);
 
 			return $constraints;
 		});
 
 		$services['refer.discount.reward.config.constraints.minimum_order'] = function($c) {
 			return new DiscountReward\Reward\Config\Constraint\MinimumOrder;
-		};
-
-		$services['refer.discount.reward.config.constraints.timeout'] = function($c) {
-			return new DiscountReward\Reward\Config\Constraint\Timeout;
 		};
 
 		// Referral triggers

@@ -32,7 +32,7 @@ class DiscountRewardType implements TypeInterface
 	{
 		return [
 			'discount_reward_minimum_order',
-			'discount_reward_timeout',
+			'refer_a_friend_timeout',
 		];
 	}
 }
