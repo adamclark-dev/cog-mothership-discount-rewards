@@ -17,18 +17,27 @@ class Services implements ServicesInterface
 		});
 
 		$services['refer.discount.reward.types.discount_reward'] = function($c) {
-			return new DiscountReward\Reward\Type\DiscountRewardType($c['refer.discount.form.reward.discount_reward']);
+			return new DiscountReward\Reward\Type\DiscountRewardType($c['cfg']->currency->supportedCurrencies);
 		};
 
 		// Referral constraints
 		$services['refer.reward.config.constraints'] = $services->extend('refer.reward.config.constraints', function($constraints, $c) {
-			$constraints->add($c['refer.discount.reward.config.constraints.minimum_order']);
+			$constraints->add($c['refer.discount.reward.config.constraints.timeout']);
+
+			$constraints = $c['refer.discount.reward.config.constraints.minimum_order_factory']->addMinimumOrderConstraints($constraints);
 
 			return $constraints;
 		});
 
-		$services['refer.discount.reward.config.constraints.minimum_order'] = function($c) {
-			return new DiscountReward\Reward\Config\Constraint\MinimumOrder;
+		$services['refer.discount.reward.config.constraints.minimum_order_factory'] = function($c) {
+			return new DiscountReward\Reward\Config\Constraint\MinimumOrderFactory(
+				$c['cfg']->currency->supportedCurrencies,
+				$c['translator']
+			);
+		};
+
+		$services['refer.discount.reward.config.constraints.timeout'] = function($c) {
+			return new DiscountReward\Reward\Config\Constraint\Timeout;
 		};
 
 		// Referral triggers

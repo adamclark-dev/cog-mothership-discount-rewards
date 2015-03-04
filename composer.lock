@@ -562,12 +562,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:messagedigital/cog-mothership-refer-a-friend.git",
-                "reference": "c7eb2186875686d1c2273f17a580fd4fbefc8326"
+                "reference": "8b7185f237c7390e974a7e470d2bf3afef735a79"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/messagedigital/cog-mothership-refer-a-friend/zipball/c7eb2186875686d1c2273f17a580fd4fbefc8326",
-                "reference": "c7eb2186875686d1c2273f17a580fd4fbefc8326",
+                "url": "https://api.github.com/repos/messagedigital/cog-mothership-refer-a-friend/zipball/8b7185f237c7390e974a7e470d2bf3afef735a79",
+                "reference": "8b7185f237c7390e974a7e470d2bf3afef735a79",
                 "shasum": ""
             },
             "require": {
@@ -605,7 +605,7 @@
                 "issues": "http://github.com/messagedigital/cog-mothership-refer-a-friend/issues",
                 "source": "https://github.com/messagedigital/cog-mothership-refer-a-friend/tree/develop"
             },
-            "time": "2015-03-02 13:50:29"
+            "time": "2015-03-04 16:45:22"
         },
         {
             "name": "message/wkhtmltopdf",

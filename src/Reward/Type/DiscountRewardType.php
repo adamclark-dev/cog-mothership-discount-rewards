@@ -6,6 +6,13 @@ use Message\Mothership\ReferAFriend\Reward\Type\TypeInterface;
 
 class DiscountRewardType implements TypeInterface
 {
+	private $_currencies;
+
+	public function __construct(array $currencies)
+	{
+		$this->_currencies = $currencies;
+	}
+
 	public function getName()
 	{
 		return 'discount_reward';
@@ -13,12 +20,12 @@ class DiscountRewardType implements TypeInterface
 
 	public function getDisplayName()
 	{
-		return 'ms.discount_reward.referral.types.discount_reward.name';
+		return 'ms.discount_reward.reward.types.discount_reward.name';
 	}
 
 	public function getDescription()
 	{
-		return 'ms.discount_reward.referral.types.discount_reward.description';
+		return 'ms.discount_reward.reward.types.discount_reward.description';
 	}
 
 	public function validTriggers()
@@ -30,9 +37,14 @@ class DiscountRewardType implements TypeInterface
 
 	public function validConstraints()
 	{
-		return [
-			'discount_reward_minimum_order',
-			'refer_a_friend_timeout',
+		$constraints =  [
+			'discount_reward_timeout',
 		];
+
+		foreach ($this->_currencies as $currency) {
+			$constraints[] = 'discount_reward_minimum_order_' . $currency;
+		}
+
+		return $constraints;
 	}
 }

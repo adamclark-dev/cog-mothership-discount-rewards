@@ -2,6 +2,7 @@
 
 namespace Message\Mothership\DiscountReward\EventListener;
 
+use Message\Mothership\DiscountReward\Reward\Config\Constraint\MinimumOrder;
 use Message\Cog\Event\EventListener;
 use Message\Cog\Event\SubscriberInterface;
 use Message\Mothership\Commerce\Order\Events as OrderEvents;
@@ -30,13 +31,19 @@ class DiscountRewardListener extends EventListener implements SubscriberInterfac
 
 		foreach ($referrals as $referral) {
 			if ($referral->hasTriggered(OrderEvents::CREATE_COMPLETE)) {
-
 				foreach ($referral->getRewardConfig()->getConstraints() as $constraint) {
-					if (!$constraint->isValid($referral, $event)) {
+					// Don't bother checking minimum order if currency does not match
+					if ($constraint instanceof MinimumOrder && $order->currency !== $constraint->getCurrency()) {
+						continue;
+					}
+
+					if (false === $constraint->isValid($referral, $event)) {
 						return;
 					}
 				}
 			}
+
+			$this->get('refer.discount.reward.discount_creator')->createCode($referral);
 		}
 	}
 }

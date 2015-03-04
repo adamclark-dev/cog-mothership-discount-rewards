@@ -1,9 +1,12 @@
 ms.discount_reward:
-  referral:
+  reward:
     constraints:
       minimum_order:
         name: Minimum order value
         description: Set the minimum order to trigger the reward creation
+      timeout:
+        name: Time out (in days)
+        description: Set the amount of time it takes for the referral to be become invalidated
     triggers:
       order_create:
         name: Order creation
