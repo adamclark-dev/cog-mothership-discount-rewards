@@ -47,4 +47,18 @@ class DiscountRewardType implements TypeInterface
 
 		return $constraints;
 	}
+
+	public function validRewardOptions()
+	{
+		$rewardOptions = [
+			'discount_reward_discount_type',
+			'discount_reward_percentage_value',
+		];
+
+		foreach ($this->_currencies as $currency) {
+			$rewardOptions[] = 'discount_reward_set_amount_' . $currency;
+		}
+
+		return $rewardOptions;
+	}
 }

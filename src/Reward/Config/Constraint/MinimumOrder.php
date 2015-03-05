@@ -9,6 +9,8 @@ use Message\Mothership\Commerce\Order\Event\Event as OrderEvent;
 use Message\Cog\Event\Event;
 use Message\Cog\Localisation\Translator;
 
+use Symfony\Component\Validator\Constraints;
+
 /**
  * Class MinimumOrder
  * @package Message\Mothership\DiscountReward\Reward\Config\Constraint
@@ -70,12 +72,17 @@ class MinimumOrder implements ConstraintInterface
 
 	public function getFormType()
 	{
-		return 'text';
+		return 'money';
 	}
 
 	public function getFormOptions()
 	{
-		return [];
+		return [
+			'currency'    => $this->_currency,
+			'constraints' => [
+				new Constraints\GreaterThan(['value' => 0]),
+			]
+		];
 	}
 
 	public function isValid(ReferralInterface $referral, Event $event)

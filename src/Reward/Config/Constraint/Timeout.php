@@ -3,8 +3,11 @@
 namespace Message\Mothership\DiscountReward\Reward\Config\Constraint;
 
 use Message\Mothership\ReferAFriend\Referral\ReferralInterface;
+use Message\Mothership\ReferAFriend\Referral\Edit as ReferralEdit;
+use Message\Mothership\ReferAFriend\Referral\Statuses;
 use Message\Mothership\ReferAFriend\Reward\Config\Constraint\ConstraintInterface;
 
+use Message\Mothership\Commerce\Order\Event\Event as OrderEvent;
 use Message\Cog\Event\Event;
 
 use Symfony\Component\Validator\Constraints;
@@ -19,7 +22,17 @@ use Symfony\Component\Validator\Constraints;
  */
 class Timeout implements ConstraintInterface
 {
+	/**
+	 * @var Number of seconds until timeout
+	 */
 	private $_value;
+
+	private $_referralEdit;
+
+	public function __construct(ReferralEdit $referralEdit)
+	{
+		$this->_referralEdit;
+	}
 
 	public function getName()
 	{
@@ -42,17 +55,17 @@ class Timeout implements ConstraintInterface
 			throw new \LogicException('Value must be a whole number');
 		}
 
-		$this->_value = (int) $value;
+		$this->_value = (int) $value * 86400;
 	}
 
 	public function getValue()
 	{
-		return $this->_value;
+		return (int) $this->_value / 86400;
 	}
 
 	public function getFormType()
 	{
-		return 'text';
+		return 'integer';
 	}
 
 	public function getFormOptions()
@@ -66,6 +79,20 @@ class Timeout implements ConstraintInterface
 
 	public function isValid(ReferralInterface $referral, Event $event)
 	{
+		if (!$event instanceof OrderEvent) {
+			throw new \LogicException('Event should be an instance of OrderEvent');
+		}
 
+		$orderDate    = $event->getOrder()->authorship->createdAt()->format('Y-m-d');
+		$referralDate = $referral->getCreatedAt()->format('Y-m-d');
+
+		$diff = strtotime($orderDate) - strtotime($referralDate);
+
+		$timedOut = $diff <= $this->_value;
+
+		if (false === $timedOut) {
+			$referral->setStatus(Statuses::EXPIRED);
+			$this->_referralEdit->save($referral);
+		}
 	}
 }
