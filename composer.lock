@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "9a579d7c2d5627f0b8bba8dc44c38090",
+    "hash": "4c2a1a70c546fda8d73b26f0a1c89543",
     "packages": [
         {
             "name": "dflydev/markdown",
@@ -562,12 +562,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:messagedigital/cog-mothership-refer-a-friend.git",
-                "reference": "778afc12235abd18c31836ff0b1cd8251558a5f6"
+                "reference": "a981ff1ba578fc9e5c2e1eaf0f66e4eeef29db20"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/messagedigital/cog-mothership-refer-a-friend/zipball/778afc12235abd18c31836ff0b1cd8251558a5f6",
-                "reference": "778afc12235abd18c31836ff0b1cd8251558a5f6",
+                "url": "https://api.github.com/repos/messagedigital/cog-mothership-refer-a-friend/zipball/a981ff1ba578fc9e5c2e1eaf0f66e4eeef29db20",
+                "reference": "a981ff1ba578fc9e5c2e1eaf0f66e4eeef29db20",
                 "shasum": ""
             },
             "require": {
@@ -605,7 +605,7 @@
                 "issues": "http://github.com/messagedigital/cog-mothership-refer-a-friend/issues",
                 "source": "https://github.com/messagedigital/cog-mothership-refer-a-friend/tree/develop"
             },
-            "time": "2015-03-05 11:09:08"
+            "time": "2015-03-06 10:02:20"
         },
         {
             "name": "message/wkhtmltopdf",

@@ -10,7 +10,7 @@ ms.discount_reward:
     triggers:
       order_create:
         name: Order creation
-        description: The reward is created when the referred user fulfills an order
+        description: The reward is created when the user creates an order that satisfies the specified constraints
     options:
       discount_type:
         name: Discount type
