@@ -13,8 +13,10 @@ class DiscountCreatedMailer extends AbstractMailer
 		$this->_message->setSubject($this->_translator->trans('ms.discount_reward.email.success.subject'));
 
 		$this->_message->setView('Message:Mothership:DiscountReward::discount_reward:email:discount_create', [
-			'toName'   => $referral->getReferrer()->getName(),
-			'message'  => $this->_translator->trans('ms.discount_reward.email.success.message'),
+			'message'  => $this->_translator->trans('ms.discount_reward.email.success.message', [
+				'{%toName%}' => $referral->getReferrer()->getName(),
+				'{%code%}'   => $discount->code,
+			]),
 			'discount' => $discount,
 		]);
 

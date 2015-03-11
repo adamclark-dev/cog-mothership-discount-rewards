@@ -562,16 +562,17 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:messagedigital/cog-mothership-refer-a-friend.git",
-                "reference": "a981ff1ba578fc9e5c2e1eaf0f66e4eeef29db20"
+                "reference": "5d15ab8089aeaa4a9d9155b4a3d4d5acf0ea7e12"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/messagedigital/cog-mothership-refer-a-friend/zipball/a981ff1ba578fc9e5c2e1eaf0f66e4eeef29db20",
-                "reference": "a981ff1ba578fc9e5c2e1eaf0f66e4eeef29db20",
+                "url": "https://api.github.com/repos/messagedigital/cog-mothership-refer-a-friend/zipball/5d15ab8089aeaa4a9d9155b4a3d4d5acf0ea7e12",
+                "reference": "5d15ab8089aeaa4a9d9155b4a3d4d5acf0ea7e12",
                 "shasum": ""
             },
             "require": {
                 "mothership-ec/cog": "~4.0",
+                "mothership-ec/cog-mothership-cms": "~4.0",
                 "mothership-ec/cog-mothership-cp": "~3.0",
                 "mothership-ec/cog-user": "~2.0",
                 "php": ">=5.4.0"
@@ -605,7 +606,7 @@
                 "issues": "http://github.com/messagedigital/cog-mothership-refer-a-friend/issues",
                 "source": "https://github.com/messagedigital/cog-mothership-refer-a-friend/tree/develop"
             },
-            "time": "2015-03-06 10:02:20"
+            "time": "2015-03-11 11:12:43"
         },
         {
             "name": "message/wkhtmltopdf",
@@ -727,11 +728,17 @@
         },
         {
             "name": "mothership-ec/cog",
-            "version": "4.0.0",
+            "version": "4.1.0",
             "source": {
                 "type": "git",
-                "url": "git@github.com:messagedigital/cog.git",
-                "reference": "4.0.0"
+                "url": "https://github.com/mothership-ec/cog.git",
+                "reference": "5c20f3cdc89506d33700d8369464dc0379e4f511"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mothership-ec/cog/zipball/5c20f3cdc89506d33700d8369464dc0379e4f511",
+                "reference": "5c20f3cdc89506d33700d8369464dc0379e4f511",
+                "shasum": ""
             },
             "require": {
                 "dflydev/markdown": "~1.0",
@@ -794,6 +801,7 @@
                     "Message\\Cog\\Test\\": "tests"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "authors": [
                 {
                     "name": "The Mothership Development Team",
@@ -806,19 +814,21 @@
                 "cog",
                 "framework"
             ],
-            "support": {
-                "wiki": "http://wiki.mothership.ec/Cog",
-                "issues": "http://github.com/mothership-ec/cog/issues"
-            },
-            "time": "2015-02-25 14:14:39"
+            "time": "2015-03-10 17:11:14"
         },
         {
             "name": "mothership-ec/cog-imageresize",
             "version": "2.0.0",
             "source": {
                 "type": "git",
-                "url": "git@github.com:messagedigital/cog-imageresize.git",
-                "reference": "2.0.0"
+                "url": "https://github.com/mothership-ec/cog-imageresize.git",
+                "reference": "4987d2ce1d2470683540c91873cf88c598798990"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mothership-ec/cog-imageresize/zipball/4987d2ce1d2470683540c91873cf88c598798990",
+                "reference": "4987d2ce1d2470683540c91873cf88c598798990",
+                "shasum": ""
             },
             "require": {
                 "imagine/imagine": "~0.4",
@@ -835,6 +845,7 @@
                     "Message\\ImageResize\\Test\\": "tests"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "proprietary"
             ],
@@ -851,19 +862,75 @@
                 "resize",
                 "thumbnail"
             ],
-            "support": {
-                "wiki": "http://wiki.mothership.ec/Cog_Image_Resize",
-                "issues": "http://github.com/mothership-ec/cog-imageresize/issues"
-            },
             "time": "2015-02-24 15:42:16"
+        },
+        {
+            "name": "mothership-ec/cog-mothership-cms",
+            "version": "4.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mothership-ec/cog-mothership-cms.git",
+                "reference": "dcadd80cd812b6799f60500095e2ccdec0145f0d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mothership-ec/cog-mothership-cms/zipball/dcadd80cd812b6799f60500095e2ccdec0145f0d",
+                "reference": "dcadd80cd812b6799f60500095e2ccdec0145f0d",
+                "shasum": ""
+            },
+            "require": {
+                "mothership-ec/cog": "~4.0",
+                "mothership-ec/cog-imageresize": "~2.0",
+                "mothership-ec/cog-mothership-cp": "~3.0",
+                "mothership-ec/cog-mothership-file-manager": "~3.0",
+                "mothership-ec/cog-mothership-reports": "~2.0",
+                "mothership-ec/cog-mothership-user": "~4.0",
+                "php": ">=5.4.0"
+            },
+            "suggest": {
+                "mothership-ec/cog-mothership-reports": "Module for displaying reports"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Message\\Mothership\\CMS\\": "src",
+                    "Message\\Mothership\\CMS\\Test\\": "tests"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "The Mothership Development Team",
+                    "email": "dev@mothership.ec"
+                }
+            ],
+            "description": "Cog module for content management in Mothership",
+            "homepage": "http://mothership-ec",
+            "keywords": [
+                "cms",
+                "cog",
+                "content",
+                "editing",
+                "mothership"
+            ],
+            "time": "2015-02-24 16:47:20"
         },
         {
             "name": "mothership-ec/cog-mothership-commerce",
             "version": "5.0.0",
             "source": {
                 "type": "git",
-                "url": "git@github.com:messagedigital/cog-mothership-commerce.git",
-                "reference": "5.0.0"
+                "url": "https://github.com/mothership-ec/cog-mothership-commerce.git",
+                "reference": "51d6c69ffb77a5c8b9bb54f918b3c0ff9722fa4d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mothership-ec/cog-mothership-commerce/zipball/51d6c69ffb77a5c8b9bb54f918b3c0ff9722fa4d",
+                "reference": "51d6c69ffb77a5c8b9bb54f918b3c0ff9722fa4d",
+                "shasum": ""
             },
             "require": {
                 "domisys/image_barcode2": "3.0.0",
@@ -885,6 +952,7 @@
                     "Message\\Mothership\\Commerce\\Test\\": "tests"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "GPL-3.0+"
             ],
@@ -905,10 +973,6 @@
                 "orders",
                 "products"
             ],
-            "support": {
-                "wiki": "http://wiki.mothership.ec/Commerce_module",
-                "issues": "http://github.com/mothership-ec/cog-mothership-commerce/issues"
-            },
             "time": "2015-02-24 17:06:39"
         },
         {
@@ -916,8 +980,14 @@
             "version": "3.0.0",
             "source": {
                 "type": "git",
-                "url": "git@github.com:messagedigital/cog-mothership-cp.git",
-                "reference": "3.0.0"
+                "url": "https://github.com/mothership-ec/cog-mothership-cp.git",
+                "reference": "3a717271f8353154c096b194d6e730ffdb283e64"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mothership-ec/cog-mothership-cp/zipball/3a717271f8353154c096b194d6e730ffdb283e64",
+                "reference": "3a717271f8353154c096b194d6e730ffdb283e64",
+                "shasum": ""
             },
             "require": {
                 "mothership-ec/cog": "~4.0",
@@ -934,6 +1004,7 @@
                     "Message\\Mothership\\ControlPanel\\Test\\": "tests"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "proprietary"
             ],
@@ -946,16 +1017,12 @@
             "description": "Cog module for the Mothership Control Panel",
             "homepage": "http://mothership.ec",
             "keywords": [
+                "CP",
                 "admin",
                 "cog",
                 "control panel",
-                "cp",
                 "mothership"
             ],
-            "support": {
-                "wiki": "http://wiki.mothership.ec/Control_Panel_module",
-                "issues": "http://github.com/mothership-ec/cog-mothership-cp/issues"
-            },
             "time": "2015-02-24 14:51:58"
         },
         {
@@ -963,8 +1030,14 @@
             "version": "2.0.0",
             "source": {
                 "type": "git",
-                "url": "git@github.com:messagedigital/cog-mothership-discount.git",
-                "reference": "2.0.0"
+                "url": "https://github.com/mothership-ec/cog-mothership-discount.git",
+                "reference": "d596614b470619a7a6f85378dfad69066ffb89c9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mothership-ec/cog-mothership-discount/zipball/d596614b470619a7a6f85378dfad69066ffb89c9",
+                "reference": "d596614b470619a7a6f85378dfad69066ffb89c9",
+                "shasum": ""
             },
             "require": {
                 "mothership-ec/cog": "~4.0",
@@ -981,6 +1054,7 @@
                     "Message\\Mothership\\Discount\\Test\\": "tests"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "GPL-3.0+"
             ],
@@ -999,10 +1073,6 @@
                 "mothership",
                 "offer"
             ],
-            "support": {
-                "wiki": "http://wiki.mothership.ec/Discount_module",
-                "issues": "http://github.com/mothership-ec/cog-mothership-discount/issues"
-            },
             "time": "2015-02-25 11:24:40"
         },
         {
@@ -1010,8 +1080,14 @@
             "version": "3.0.0",
             "source": {
                 "type": "git",
-                "url": "git@github.com:messagedigital/cog-mothership-file-manager.git",
-                "reference": "3.0.0"
+                "url": "https://github.com/mothership-ec/cog-mothership-file-manager.git",
+                "reference": "2f74adfa9c3b4db67d617cfb390e85ae9a1a95ab"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mothership-ec/cog-mothership-file-manager/zipball/2f74adfa9c3b4db67d617cfb390e85ae9a1a95ab",
+                "reference": "2f74adfa9c3b4db67d617cfb390e85ae9a1a95ab",
+                "shasum": ""
             },
             "require": {
                 "mothership-ec/cog": "~4.0",
@@ -1026,6 +1102,7 @@
                     "Message\\Mothership\\FileManager\\Test\\": "tests"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "GPL-3.0+"
             ],
@@ -1049,10 +1126,6 @@
                 "upload",
                 "uploads"
             ],
-            "support": {
-                "wiki": "http://wiki.mothership.ec/File_Manager_module",
-                "issues": "http://github.com/mothership-ec/cog-mothership-file-manager/issues"
-            },
             "time": "2015-02-24 15:55:58"
         },
         {
@@ -1060,8 +1133,14 @@
             "version": "2.0.0",
             "source": {
                 "type": "git",
-                "url": "git@github.com:messagedigital/cog-mothership-reports.git",
-                "reference": "2.0.0"
+                "url": "https://github.com/mothership-ec/cog-mothership-reports.git",
+                "reference": "c6ffc5dde5174e2336e08a45ecd8d467ae79cf33"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mothership-ec/cog-mothership-reports/zipball/c6ffc5dde5174e2336e08a45ecd8d467ae79cf33",
+                "reference": "c6ffc5dde5174e2336e08a45ecd8d467ae79cf33",
+                "shasum": ""
             },
             "require": {
                 "mothership-ec/cog": "~4.0",
@@ -1075,6 +1154,7 @@
                     "Message\\Mothership\\Report\\Test\\": "tests"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "proprietary"
             ],
@@ -1094,10 +1174,6 @@
                 "reports",
                 "stats"
             ],
-            "support": {
-                "wiki": "http://wiki.mothership.ec/Reports_module",
-                "issues": "http://github.com/mothership-ec/cog-mothership-reports/issues"
-            },
             "time": "2015-02-24 15:06:23"
         },
         {
@@ -1105,8 +1181,14 @@
             "version": "4.0.0",
             "source": {
                 "type": "git",
-                "url": "git@github.com:messagedigital/cog-mothership-user.git",
-                "reference": "4.0.0"
+                "url": "https://github.com/mothership-ec/cog-mothership-user.git",
+                "reference": "c95dcdb1d9b49bceeb5f7688123729da038bf8ba"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mothership-ec/cog-mothership-user/zipball/c95dcdb1d9b49bceeb5f7688123729da038bf8ba",
+                "reference": "c95dcdb1d9b49bceeb5f7688123729da038bf8ba",
+                "shasum": ""
             },
             "require": {
                 "kevinlebrun/colors.php": "0.*",
@@ -1123,6 +1205,7 @@
                     "Message\\Mothership\\User\\Test\\": "tests"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "proprietary"
             ],
@@ -1141,10 +1224,6 @@
                 "mothership",
                 "user"
             ],
-            "support": {
-                "wiki": "http://wiki.mothership.ec/User_module",
-                "issues": "http://github.com/mothership-ec/cog-mothership-user/issues"
-            },
             "time": "2015-02-24 15:30:20"
         },
         {
@@ -1152,8 +1231,14 @@
             "version": "2.0.0",
             "source": {
                 "type": "git",
-                "url": "git@github.com:messagedigital/cog-user.git",
-                "reference": "2.0.0"
+                "url": "https://github.com/mothership-ec/cog-user.git",
+                "reference": "56cbaa0046b5aed659edde3534e951bba829a4d1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mothership-ec/cog-user/zipball/56cbaa0046b5aed659edde3534e951bba829a4d1",
+                "reference": "56cbaa0046b5aed659edde3534e951bba829a4d1",
+                "shasum": ""
             },
             "require": {
                 "mothership-ec/cog": "~4.0",
@@ -1166,6 +1251,7 @@
                     "Message\\User\\Test\\": "tests"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "proprietary"
             ],
@@ -1178,16 +1264,12 @@
             "description": "Cog module for a very basic and extensible user system",
             "homepage": "http://mothership.ec",
             "keywords": [
+                "Users",
                 "account",
                 "accounts",
                 "cog",
-                "user",
-                "users"
+                "user"
             ],
-            "support": {
-                "wiki": "http://wiki.mothership.ec/Cog_User",
-                "issues": "http://github.com/mothership-ec/cog-user/issues"
-            },
             "time": "2015-02-24 14:40:17"
         },
         {
