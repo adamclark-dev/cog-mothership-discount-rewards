@@ -27,9 +27,15 @@ ms.discount_reward:
   email:
     success:
       subject: Claim your discount
-      message: >
+      message: |
         Congratulations {%toName%}!
+
         You recently referred a friend to our site, and they fulfilled the requirements for you to be entitled to a free discount: Discount code: {%discountCode%}
     failure:
       subject: Important: Discount code generation failed
-      message: You recently referrred a friend to our site, and they fulfilled the requirements for you to be entitled to a free discount. However, the discount code could not be generated. Please get in touch to resolve this issue.
+      message: |
+        You recently referrred a friend to our site, and they fulfilled the requirements for you to be entitled to a free discount.
+
+        Unfortunately due to a technical fault, the discount code could not be generated.
+
+        Please get in touch to resolve this issue. We apologise for any inconvenience.

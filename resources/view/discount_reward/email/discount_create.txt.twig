@@ -1,9 +1,10 @@
 {{ message }}
 
 {% if discount.percentage > 0 %}
-    Value: {{ discount.percentage }}% off
+Value: {{ discount.percentage }}% off
 {% else %}
+Value:
     {% for currency, value in discount.discountAmounts %}
-        - {{ value | price(currency) }}
+- {{ value | price(currency) }}
     {% endfor %}
 {% endif %}
