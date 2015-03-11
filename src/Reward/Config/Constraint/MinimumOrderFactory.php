@@ -32,6 +32,8 @@ class MinimumOrderFactory
 	}
 
 	/**
+	 * Add new instances of the MinimumOrder constraint to the constrain collection for each currency
+	 *
 	 * @param Collection $constraints
 	 *
 	 * @return Collection

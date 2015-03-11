@@ -5,8 +5,19 @@ namespace Message\Mothership\DiscountReward\Bootstrap;
 use Message\Mothership\DiscountReward;
 use Message\Cog\Bootstrap\ServicesInterface;
 
+/**
+ * Class Services
+ * @package Message\Mothership\DiscountReward\Bootstrap
+ *
+ * @author Thomas Marchant <thomas@mothership.ec>
+ *
+ * Register Discount Reward services, and extend some Refer a Friend services
+ */
 class Services implements ServicesInterface
 {
+	/**
+	 * {@inheritDoc}
+	 */
 	public function registerServices($services)
 	{
 		// Reward types

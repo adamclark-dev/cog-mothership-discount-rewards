@@ -7,6 +7,14 @@ use Message\Cog\Localisation\Translator;
 
 use Symfony\Component\Validator\Constraints;
 
+/**
+ * Class SetAmount
+ * @package Message\Mothership\DiscountReward\Reward\Config\RewardOption
+ *
+ * @author Thomas Marchant <thomas@mothership.ec>
+ *
+ * Set the solid amount that the discount applies to for the specified currency.
+ */
 class SetAmount implements RewardOptionInterface
 {
 	private $_value;

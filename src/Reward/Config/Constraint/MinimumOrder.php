@@ -21,9 +21,19 @@ use Symfony\Component\Validator\Constraints;
  */
 class MinimumOrder implements ConstraintInterface
 {
+	/**
+	 * @var float
+	 */
 	private $_value;
+
+	/**
+	 * @var string
+	 */
 	private $_currency;
 
+	/**
+	 * @var Translator
+	 */
 	private $_translator;
 
 	public function __construct(Translator $translator)
@@ -31,31 +41,56 @@ class MinimumOrder implements ConstraintInterface
 		$this->_translator = $translator;
 	}
 
+	/**
+	 * {@inheritDoc}
+	 */
 	public function getName()
 	{
 		return 'discount_reward_minimum_order_' . $this->_currency;
 	}
 
+	/**
+	 * Translates the display name here and appends the currency
+	 *
+	 * {@inheritDoc}
+	 */
 	public function getDisplayName()
 	{
 		return $this->_translator->trans('ms.discount_reward.reward.constraints.minimum_order.name') . ' (' . $this->_currency . ')';
 	}
 
+	/**
+	 * Translates the description here and appends the currency
+	 *
+	 * {@inheritDoc}
+	 */
 	public function getDescription()
 	{
 		return $this->_translator->trans('ms.discount_reward.reward.constraints.minimum_order.description') . ' (' . $this->_currency . ')';
 	}
 
+	/**
+	 * {@inheritDoc}
+	 */
 	public function setValue($value)
 	{
 		$this->_value = round((float) $value, 2);
 	}
 
+	/**
+	 * {@inheritDoc}
+	 */
 	public function getValue()
 	{
 		return $this->_value;
 	}
 
+	/**
+	 * Set the currency that the value applies to
+	 *
+	 * @param string $currency
+	 * @throwns \InvalidArgumentException  Throws exception if currency is not a string
+	 */
 	public function setCurrency($currency)
 	{
 		if (!is_string($currency)) {
@@ -65,16 +100,25 @@ class MinimumOrder implements ConstraintInterface
 		$this->_currency = $currency;
 	}
 
+	/**
+	 * Get the currency that the value applies to
+	 */
 	public function getCurrency()
 	{
 		return $this->_currency;
 	}
 
+	/**
+	 * {@inheritDoc}
+	 */
 	public function getFormType()
 	{
 		return 'money';
 	}
 
+	/**
+	 * {@inheritDoc}
+	 */
 	public function getFormOptions()
 	{
 		return [
@@ -85,6 +129,9 @@ class MinimumOrder implements ConstraintInterface
 		];
 	}
 
+	/**
+	 * {@inheritDoc}
+	 */
 	public function isValid(ReferralInterface $referral, Event $event)
 	{
 		if (!$event instanceof OrderEvent) {

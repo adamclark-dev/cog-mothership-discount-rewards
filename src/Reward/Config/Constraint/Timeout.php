@@ -27,6 +27,9 @@ class Timeout implements ConstraintInterface
 	 */
 	private $_value;
 
+	/**
+	 * @var ReferralEdit
+	 */
 	private $_referralEdit;
 
 	public function __construct(ReferralEdit $referralEdit)
@@ -34,21 +37,33 @@ class Timeout implements ConstraintInterface
 		$this->_referralEdit;
 	}
 
+	/**
+	 * {@inheritDoc}
+	 */
 	public function getName()
 	{
 		return 'discount_reward_timeout';
 	}
 
+	/**
+	 * {@inheritDoc}
+	 */
 	public function getDisplayName()
 	{
 		return 'ms.discount_reward.reward.constraints.timeout.name';
 	}
 
+	/**
+	 * {@inheritDoc}
+	 */
 	public function getDescription()
 	{
 		return 'ms.discount_reward.reward.constraints.timeout.description';
 	}
 
+	/**
+	 * {@inheritDoc}
+	 */
 	public function setValue($value)
 	{
 		if (!is_numeric($value) || (int) $value != $value) {
@@ -58,16 +73,25 @@ class Timeout implements ConstraintInterface
 		$this->_value = (int) $value * 86400;
 	}
 
+	/**
+	 * {@inheritDoc}
+	 */
 	public function getValue()
 	{
 		return (int) $this->_value / 86400;
 	}
 
+	/**
+	 * {@inheritDoc}
+	 */
 	public function getFormType()
 	{
 		return 'integer';
 	}
 
+	/**
+	 * {@inheritDoc}
+	 */
 	public function getFormOptions()
 	{
 		return [
@@ -77,6 +101,9 @@ class Timeout implements ConstraintInterface
 		];
 	}
 
+	/**
+	 * {@inheritDoc}
+	 */
 	public function isValid(ReferralInterface $referral, Event $event)
 	{
 		if (!$event instanceof OrderEvent) {

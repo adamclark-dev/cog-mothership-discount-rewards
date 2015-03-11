@@ -5,8 +5,15 @@ namespace Message\Mothership\DiscountReward\Mailer;
 use Message\Cog\Mail\Message;
 use Message\Cog\Mail\Mailer;
 use Message\Cog\Localisation\Translator;
-use Message\Mothership\ReferAFriend\Referral\Exception\EmailException;
 
+/**
+ * Class AbstractMailer
+ * @package Message\Mothership\DiscountReward\Mailer
+ *
+ * @author Thomas Marchant <thomas@mothership.ec>
+ *
+ * Abstract class for simplifying the process of sending an email to a user
+ */
 abstract class AbstractMailer
 {
 	/**
@@ -31,6 +38,11 @@ abstract class AbstractMailer
 		$this->_translator = $translator;
 	}
 
+	/**
+	 * Send the message.
+	 *
+	 * @throws \RuntimeException   Throws exception if the email could not be sent
+	 */
 	protected function _send()
 	{
 		$failed = [];
