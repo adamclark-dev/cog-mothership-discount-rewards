@@ -50,7 +50,7 @@ class MinimumOrder implements ConstraintInterface
 	}
 
 	/**
-	 * Translates the display name here and appends the currency
+	 * Translates the display name here and appends the currency ID
 	 *
 	 * {@inheritDoc}
 	 */
@@ -60,7 +60,7 @@ class MinimumOrder implements ConstraintInterface
 	}
 
 	/**
-	 * Translates the description here and appends the currency
+	 * Translates the description here and appends the currency ID
 	 *
 	 * {@inheritDoc}
 	 */
@@ -86,10 +86,10 @@ class MinimumOrder implements ConstraintInterface
 	}
 
 	/**
-	 * Set the currency that the value applies to
+	 * Set the currency ID that the value applies to
 	 *
 	 * @param string $currency
-	 * @throwns \InvalidArgumentException  Throws exception if currency is not a string
+	 * @throwns \InvalidArgumentException  Throws exception if currency ID is not a string
 	 */
 	public function setCurrency($currency)
 	{
@@ -101,7 +101,7 @@ class MinimumOrder implements ConstraintInterface
 	}
 
 	/**
-	 * Get the currency that the value applies to
+	 * Get the currency ID that the value applies to
 	 */
 	public function getCurrency()
 	{
