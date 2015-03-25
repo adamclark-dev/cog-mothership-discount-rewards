@@ -18,7 +18,7 @@ This cogule includes:
 + **Timeout** - A constraint that determines how long (in days) the referred user has to create an order. If the referral has timed out, it will update the status to `expired`.
 	+ **TODO:** Create cron task to automatically update timeouts
 
-## Reward Options
+## Reward options
 
 + **Discount type** - Set whether the discount is a percentage value or a specific amount.
 + **Percentage value** - If the discount type is set to Percentage, this sets the value of that percentage
