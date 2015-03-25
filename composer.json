@@ -11,7 +11,7 @@
 		}
 	],
 	"support": {
-		"wiki"  : "http://server.local/wiki/projects/cog",
+		"wiki"  : "http://wiki.mothership.ec/Refer_a_Friend:_Discount_Rewards",
 		"issues": "http://github.com/messagedigital/cog-mothership-discount-rewards/issues"
 	},
 	"autoload": {
