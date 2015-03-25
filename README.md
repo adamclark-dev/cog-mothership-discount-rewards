@@ -6,7 +6,7 @@ This cogule includes:
 
 ## Reward types:
 
-+ **Discount Reward** - A discount reward for the referrer.
++ **Discount reward** - A discount reward for the referrer.
 
 ## Triggers:
 
