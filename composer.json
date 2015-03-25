@@ -1,6 +1,6 @@
 {
 	"name": "mothership-ec/cog-mothership-discount-rewards",
-	"description": "Cog module for allow discount rewards with the 'Refer a Friend' module",
+	"description": "Cog module to allow discount rewards with the 'Refer a Friend' module",
 	"keywords": ["refer a friend", "rewards", "discounts", "cog", "mothership"],
 	"homepage": "http://mothership.ec",
 	"license": "GPL-3.0+",
