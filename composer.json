@@ -1,0 +1,32 @@
+{
+	"name": "mothership-ec/cog-mothership-discount-rewards",
+	"description": "Cog module to allow discount rewards with the 'Refer a Friend' module",
+	"keywords": ["refer a friend", "rewards", "discounts", "cog", "mothership"],
+	"homepage": "http://mothership.ec",
+	"license": "GPL-3.0+",
+	"authors": [
+		{
+			"name" : "The Mothership Development Team",
+			"email": "hello@mothership.ec"
+		}
+	],
+	"support": {
+		"wiki"  : "http://wiki.mothership.ec/Refer_a_Friend:_Discount_Rewards",
+		"issues": "http://github.com/messagedigital/cog-mothership-discount-rewards/issues"
+	},
+	"autoload": {
+		"psr-4": {
+			"Message\\Mothership\\DiscountReward\\"      : "src",
+			"Message\\Mothership\\DiscountReward\\Test\\": "tests"
+		}
+	},
+	"require": {
+		"php": ">=5.4.0",
+
+		"mothership-ec/cog-mothership-refer-a-friend" : "~1.0@beta",
+        "mothership-ec/cog"                     : "~4.0",
+        "mothership-ec/cog-user"                : "~2.0",
+        "mothership-ec/cog-mothership-commerce" : "~5.0",
+		"mothership-ec/cog-mothership-discount" : "~2.0"
+	}
+}

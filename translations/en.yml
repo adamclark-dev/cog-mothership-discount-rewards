@@ -1,0 +1,41 @@
+ms.discount_reward:
+  reward:
+    constraints:
+      minimum_order:
+        name: Minimum order value
+        description: Set the minimum order to trigger the reward creation
+      timeout:
+        name: Time out (in days)
+        description: Set the amount of time it takes for the referral to be become invalidated
+    triggers:
+      order_create:
+        name: Order creation
+        description: The reward is created when the user creates an order that satisfies the specified constraints
+    options:
+      discount_type:
+        name: Discount type
+        percentage: Percentage
+        set_amount: Set amount
+      percentage_value:
+        name: Percentage reduction
+      set_amount:
+        name: Amount
+    types:
+      discount_reward:
+        name: Discount reward
+        description: A reward where a discount is generated when a user is successfully invited to the site
+  email:
+    success:
+      subject: Claim your discount
+      message: |
+        Congratulations {%toName%}!
+
+        You recently referred a friend to our site, and they fulfilled the requirements for you to be entitled to a free discount: Discount code: {%discountCode%}
+    failure:
+      subject: Important: Discount code generation failed
+      message: |
+        You recently referrred a friend to our site, and they fulfilled the requirements for you to be entitled to a free discount.
+
+        Unfortunately due to a technical fault, the discount code could not be generated.
+
+        Please get in touch to resolve this issue. We apologise for any inconvenience.
